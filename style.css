@@ -1,0 +1,160 @@
+.grid-container {
+    /* display: grid;
+    grid-template-areas:
+    'display display display display'
+    'btnBoxClear btnBoxBackspace btnBoxDivide btnBoxMultiply'
+    'btnBoxSeven btnBoxEight btnBoxNine btnBoxSubtract '
+    'btnBoxFour btnBoxFive btnBoxSix btnBoxAdd'
+    'btnBoxOne btnBoxTwo btnBoxThree btnBoxEquals'
+    'btnBoxZero btnBoxZero btnBoxDecimal btnBoxEquals';
+    background-color: #2196F3;
+    padding: 10px; */
+    justify-content: center;
+    align-content: center;
+    height: 575px;
+    width: 425px;
+    background-color: darkslategray;
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: repeat(6, 80px);
+    grid-gap: 10px;
+    border-radius: 25px;
+    /* grid-auto-rows: minmax(100px, auto); */
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+.btn {
+    background-color: lightslategray ;
+    border: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    justify-self: stretch;
+    font-size: 2em;
+}
+
+.box {
+    /* border: 2px blue solid; */
+}
+
+.operatorBtn {
+    background-color: black;
+}
+
+#display { 
+    /* grid-area: display; */
+    grid-column: 1 / 5;
+    grid-row: 1;
+    background-color: lightgrey;
+    border-radius: 15px;
+    font-size: 4em;
+    overflow:scroll;
+}
+
+#btnEquals {
+    background-color: orange;
+}
+
+#btnBoxClear { 
+    /* grid-area: btnBoxClear;  */
+    grid-column: 1;
+    grid-row: 2; 
+}
+#btnBoxBackspace { 
+    /* grid-area: btnBackspace;  */
+    grid-column: 2;
+    grid-row: 2; 
+}
+#btnBoxDivide { 
+    /* grid-area: btnBoxDivide;  */
+    grid-column: 3;
+    grid-row: 2; 
+}
+#btnBoxMultiply { 
+    /* grid-area: btnBoxMultiply;  */
+    grid-column: 4;
+    grid-row: 2; 
+}
+#btnBoxSeven { 
+    /* grid-area: btnBoxSeven;  */
+    grid-column: 1;
+    grid-row: 3; 
+}
+#btnBoxEight { 
+    /* grid-area: btnBoxEight;  */
+    grid-column: 2;
+    grid-row: 3;
+}
+#btnBoxNine { 
+    /* grid-area: btnBoxNine;  */
+    grid-column: 3;
+    grid-row: 3;
+}
+#btnBoxSubtract { 
+    /* grid-area: btnBoxSubtract;  */
+    grid-column: 4;
+    grid-row: 3;
+}
+#btnBoxFour { 
+    /* grid-area: btnBoxFour;  */
+    grid-column: 1;
+    grid-row: 4;
+}
+#btnBoxFive { 
+    /* grid-area: btnBoxFive;  */
+    grid-column: 2;
+    grid-row: 4;
+}
+#btnBoxSix { 
+    /* grid-area: btnBoxSix;  */
+    grid-column: 3;
+    grid-row: 4;
+}
+#btnBoxAdd { 
+    /* grid-area: btnBoxAdd;  */
+    grid-column: 4;
+    grid-row: 4;
+}
+#btnBoxOne { 
+    /* grid-area: btnBoxOne;  */
+    grid-column: 1;
+    grid-row: 5; 
+}
+#btnBoxTwo { 
+    /* grid-area: btnBoxTwo;  */
+    grid-column: 2;
+    grid-row: 5; 
+}
+#btnBoxThree { 
+    /* grid-area: btnBoxThree;  */
+    grid-column: 3;
+    grid-row: 5; 
+}
+#btnBoxZero { 
+    /* grid-area: btnBoxZero;  */
+    grid-column: 1 / 3;
+    grid-row: 6; 
+}
+#btnBoxDecimal { 
+    /* grid-area: btnBoxDecimal;  */
+    grid-column: 3;
+    grid-row: 6; 
+}
+#btnBoxEquals { 
+    /* grid-area: btnBoxEquals;  */
+    grid-column: 4;
+    grid-row: 5 / 7;     
+}
+
