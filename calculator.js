@@ -155,7 +155,6 @@ function clearScreen() {
 function showResult(result) {
     clearScreen();
     let resultFloat = parseFloat(result);
-    textSize = ctx.measureText(resultFloat);
     console.log(textSize);
     if (Number.isInteger(resultFloat) === true) {
         document.getElementById("display").innerHTML = '&nbsp' + result;
