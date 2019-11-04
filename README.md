@@ -3,3 +3,6 @@ Calculator project from The Odin project curriculum: https://www.theodinproject.
 Live: https://morrisrob.github.io/calculator/calculator.html
 
 Functionality: Basic calculator app built in Javascript with styled CSS.
+
+<img src="calculator.png" height="400">
+
